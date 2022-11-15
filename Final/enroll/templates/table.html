@@ -1,0 +1,52 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Data</h1>
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Title</th>
+                <th>Company Name</th>
+                <th>Email</th>
+                <th>Email_Status</th>
+                <th>Seniority</th>
+                <th>Departments</th>
+                <th>Company Phone</th>
+                <th>Employees</th>
+                <th>Industry</th>
+                <th>Person Linkedin Url</th>
+                <th>Website</th>
+                <th>Company Linkedin Url</th>
+                <th>Annual Revenue</th>
+
+              </tr>
+            </thead>
+            <tbody>
+            {% for cust in customer %}  
+              <tr>
+                <td>{{cust.FirstName}}</td>
+                <td>{{cust.LastName}}</td>
+                <td>{{cust.Title}}</td>
+                <td>{{cust.Company_Name}}</td>
+                <td>{{cust.Email}}</td>
+                <td>{{cust.Email_Status}}</td>
+                <td>{{cust.Seniority}}</td>
+                <td>{{cust.Departments}}</td>
+                <td>{{cust.Company_Phone}}</td>
+                <td>{{cust.Employees}}</td>
+                <td>{{cust.Industry}}</td>
+                <td>{{cust.Person_Linkedin_Url}}</td>
+                <td>{{cust.Website}}</td>
+                <td>{{cust.Company_Linkedin_Url}}</td>
+                <td>{{cust.Annual_Revenue}}</td>
+                
+              </tr>
+              {% endfor %} 
+            </tbody>
+        </table>	
+    </body>
+    </html>
